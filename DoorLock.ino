@@ -19,7 +19,7 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 
 String read_rfid;
-String ok_rfid_1="ddfe4e1f";
+String ok_rfid_1="ENTERCARDID";
 int lock=7;
 int buzzer=11;
 
@@ -35,7 +35,6 @@ void setup() {
     //Choose which lock below:
     pinMode(lock, OUTPUT);
     pinMode(buzzer, OUTPUT);
-    
 }
 
 /*
@@ -90,5 +89,5 @@ void loop() {
       Serial.println(read_rfid);
       beepno();
     }
-      
+
 }
