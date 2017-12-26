@@ -19,7 +19,7 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 
 String read_rfid;
-String ok_rfid_1="ENTERCARDID";
+String ok_rfid_1="ENTERCARDID"; // CARD CODE GOES HERE
 int lock=7;
 int buzzer=11;
 
